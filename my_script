@@ -1,4 +1,8 @@
+# This is the main menu
+# The script has a symbolic link in /usr/bin
+# A keyboard shortcut will initiate it (Super + Return)
+
 #!/bin/bash
 choice=`ls ~/projects/scripts | grep .sh | sed 's/.sh//g' | dmenu -l 20`
 
-~/projects/scripts/$choice.sh
+~/projects/scripts/${choice}.sh

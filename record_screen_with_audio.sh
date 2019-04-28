@@ -1,3 +1,6 @@
+# Script to start screen recording with audio
+# Will initiate a dmenu prompt for the video name, then start creating the video
+
 #!/bin/bash
 video_name=`echo "" | dmenu -p "Name the video:"`
 
