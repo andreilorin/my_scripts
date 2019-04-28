@@ -5,4 +5,9 @@
 #!/bin/bash
 script=`ls ~/projects/scripts | dmenu -l 20`
 
-st sh -c "vim ~/projects/scripts/$script"
+if [ $script = "test_scripts" ]; then
+    test_script=`ls ~/projects/scripts/test_scripts | dmenu -l 20`
+    st sh -c "vim ~/projects/scripts/test_scripts/$test_script"
+else
+    st sh -c "vim ~/projects/scripts/$script"
+fi
