@@ -1,0 +1,4 @@
+#!/bin/bash
+choice=`ls ~/projects/scripts | grep .sh | sed 's/.sh//g' | dmenu -l 20`
+
+~/projects/scripts/$choice.sh
