@@ -1,8 +1,9 @@
 #!/bin/bash
 
-apt install neovim -y
+apt install curl -y
 apt install git -y
 apt install zsh -y
+apt install neovim -y
 apt install ttf-dejavu -y
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -n)"
