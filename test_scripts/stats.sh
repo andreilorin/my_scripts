@@ -1,7 +1,7 @@
 #!/bin/bash
-memory=`free -h | awk '/^Mem:/ { print $3 "/" $2}'`
+memory=$(free -h | awk '/^Mem:/ { print $3 "/" $2}')
 
-processes=`ps axch -o cmd:15,%mem --sort=-%mem | head`
+processes=$(ps axch -o cmd:15,%mem --sort=-%mem | head)
 
 echo "Memory $memory"
 echo "$processes"
